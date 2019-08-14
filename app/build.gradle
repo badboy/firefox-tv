@@ -58,7 +58,7 @@ android {
         }
     }
 
-    flavorDimensions "engine"
+    flavorDimensions "engine", "abi"
 
     productFlavors {
         system {
@@ -70,6 +70,31 @@ android {
             // Move the suffix to the `system` product flavor when the shipping
             // version is based on Gecko.
             applicationIdSuffix ".gecko"
+        }
+
+        arm {
+            dimension "abi"
+            ndk {
+                abiFilter "armeabi-v7a"
+            }
+        }
+        aarch64 {
+            dimension "abi"
+            ndk {
+                abiFilter "arm64-v8a"
+            }
+        }
+        x86 {
+            dimension "abi"
+            ndk {
+                abiFilter "x86"
+            }
+        }
+        x86_64 {
+            dimension "abi"
+            ndk {
+                abiFilter "x86_64"
+            }
         }
     }
 

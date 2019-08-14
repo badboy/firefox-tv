@@ -38,7 +38,7 @@ Dependencies:
 2. Import the project into Android Studio or build on the command line:
 
   ```shell
-  ./gradlew clean app:assembleSystemDebug
+  ./gradlew clean app:assembleSystemArmDebug
   ```
 
 3. Make sure to select the right build variant in Android Studio: **systemDebug**
@@ -101,14 +101,14 @@ git push <remote> --no-verify
 ### Building release builds
 Release builds can be built in Android Studio or via the command line:
 ```sh
-./gradlew assembleSystemRelease # unsigned build
+./gradlew assembleSystemArmRelease # unsigned build
 ```
 
 These builds will run validation checks that the build is ready for a production release. If you
 do not want to run these checks (e.g. building release builds for local debugging), you can add this
 argument:
 ```sh
-./gradlew assembleSystemRelease -PnoValidate
+./gradlew assembleSystemArmRelease -PnoValidate
 ```
 
 #### API keys
