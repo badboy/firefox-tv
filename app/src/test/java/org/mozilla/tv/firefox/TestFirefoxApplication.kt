@@ -4,7 +4,7 @@
 
 package org.mozilla.tv.firefox
 
-import mozilla.components.service.glean.Glean
+import mozilla.telemetry.glean.Glean
 import androidx.work.testing.WorkManagerTestInitHelper
 import mozilla.components.concept.engine.utils.EngineVersion
 import org.mozilla.tv.firefox.helpers.EngineVariantFunctionality

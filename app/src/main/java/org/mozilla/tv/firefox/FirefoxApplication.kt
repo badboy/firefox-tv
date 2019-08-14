@@ -9,7 +9,7 @@ import androidx.annotation.VisibleForTesting
 import android.webkit.WebSettings
 import androidx.annotation.VisibleForTesting.PRIVATE
 import mozilla.components.concept.engine.utils.EngineVersion
-import mozilla.components.service.glean.Glean
+import mozilla.telemetry.glean.Glean
 import mozilla.components.support.base.log.Log
 import mozilla.components.support.base.log.sink.AndroidLogSink
 import mozilla.components.support.ktx.android.content.runOnlyInMainProcess
